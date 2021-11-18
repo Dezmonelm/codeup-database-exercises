@@ -1,4 +1,4 @@
-use codeup_example_db;
+use codeup_example;
 
 CREATE TABLE  IF NOT EXISTS quotes (
                         id INT UNSIGNED NOT NULL AUTO_INCREMENT,
