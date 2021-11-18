@@ -1,8 +1,9 @@
 USE codeup_test_db;
 
+TRUNCATE albums;
+
 INSERT INTO albums(artists, name, release_date, genre, sales)
-VALUES ('Michael Jackson', 'Thriller', 1982, 'pop, post-disco,
-funk, rock', 48.9),
+VALUES ('Michael Jackson', 'Thriller', 1982, 'pop, post-disco, funk, rock', 48.9),
        ('Olivia Newton-John', 'Grease: The Original Soundtrack from the Motion Picture', 1978, 'Rock and roll', 14.4),
        ('Led Zeppelin', 'Led Zeppelin IV', 1971, 'Hard rock, heavy metal, folk rock', 29.0),
        ('Michael Jackson', 'Bad', 1987, 'Pop, rhythm and blues, funk and rock', 20.7),
