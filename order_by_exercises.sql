@@ -1,8 +1,8 @@
 USE employees;
 
-SELECT * FROM employees WHERE first_name IN('Irena', 'Vidya', 'Maya') AND gender = 'M' ORDER BY first_name DESC ;
+SELECT * FROM employees WHERE first_name IN('Irena', 'Vidya', 'Maya') ORDER BY first_name, last_name;
 
-SELECT * FROM employees WHERE last_name Like 'E%';
+SELECT * FROM employees WHERE last_name Like 'E%' ORDER BY emp_no DESC;
 
 SELECT * FROM employees WHERE last_name Like '%q%';
 
