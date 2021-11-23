@@ -31,7 +31,7 @@ INSERT INTO users (name, email, role_id) VALUES
                                              ('mike', 'mike@example.com', null);
 
 INSERT INTO users (name, email, role_id)
-VALUES ('adamina', 'adamina@email.com',1),
+VALUES ('adamina', 'adamina@email.com',3),
        ('jackie', 'jackie@email.com',2),
        ('ian', 'ian@email.com',null),
        ('dez', 'dez@email.com',2);
@@ -49,3 +49,8 @@ LEFT JOIN roles ON users.role_id = roles.id;
 SELECT users.name as user_name, roles.name as role_name
 FROM users
 RIGHT JOIN roles ON users.role_id = roles.id;
+
+SELECT roles.name, COUNT(roles.name)
+FROM users
+LEFT JOIN roles ON users.role_id = roles.id
+GROUP BY roles.name;
